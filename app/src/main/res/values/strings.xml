@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ObliqueThrowSim</string>
+    <string name="start_animation">Start Animation</string>
+    <string name="initial_speed_m_s">Initial Speed (m/s)</string>
+    <string name="calculate">Calculate</string>
+    <string name="angle_degrees">Angle (degrees)</string>
+    <string name="results">Results:</string>
+</resources>

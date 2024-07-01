@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <!-- Input field for Initial Speed -->
+    <EditText
+        android:id="@+id/initialSpeedInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="@string/initial_speed_m_s"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <!-- Input field for Angle -->
+    <EditText
+        android:id="@+id/angleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/initialSpeedInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="@string/angle_degrees"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <!-- Button to trigger calculation of projectile motion -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:layout_below="@id/angleInput"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to start the animation of projectile motion -->
+    <Button
+        android:id="@+id/startAnimationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_animation"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="startAnimation"/>
+
+    <!-- TextView to display results of the calculation -->
+    <TextView
+        android:id="@+id/resultsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results"
+        android:layout_below="@id/startAnimationButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- SurfaceView for animation -->
+    <SurfaceView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/resultsTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- SurfaceView for graph (assuming this was intended for graph, correct the ID if necessary) -->
+    <SurfaceView
+        android:id="@+id/graphView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/animationView">
+
+    </SurfaceView>
+    <!-- Correct this if intended for graph -->
+    android:layout_marginTop="16dp"
+    android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
