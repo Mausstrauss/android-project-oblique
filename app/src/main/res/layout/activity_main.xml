@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"  >
 
     <!-- Input field for Initial Speed -->
     <EditText
@@ -49,7 +49,7 @@
         android:layout_below="@id/calculateButton"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:onClick="startAnimation"/>
+        android:onClick="startAnimation" />
 
     <!-- TextView to display results of the calculation -->
     <TextView
@@ -75,12 +75,9 @@
         android:id="@+id/graphView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@id/animationView">
-
-    </SurfaceView>
-    <!-- Correct this if intended for graph -->
-    android:layout_marginTop="16dp"
-    android:layout_centerHorizontal="true" />
-
+        android:layout_below="@id/animationView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
+
